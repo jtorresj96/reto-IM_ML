@@ -116,3 +116,30 @@ pip install -r requirements.txt
 ## Conclusión
 
 Las gráficas confirman que los datos de ventas presentan una alta variabilidad y una marcada asimetría, con outliers que podrían afectar al entrenamiento de los modelos. Es recomendable llevar a cabo un adecuado preprocesamiento (limpieza, transformaciones y manejo de outliers) y una ingeniería de características que considere la estacionalidad y los eventos especiales para mejorar la capacidad predictiva del modelo.
+
+## Resultados
+
+- **MAE (Error Absoluto Medio):** 1,333
+
+
+## Análisis
+
+- **MAE:** El MAE de 1,333 indica que, en promedio, el modelo se equivoca en aproximadamente 1,333 unidades en las predicciones de ventas.
+- **Error Relativo:** Dado que la media de ventas es de aproximadamente 16,000, el error relativo del modelo es de aproximadamente 8%, lo cual es aceptable pero podría mejorarse.
+
+
+## Posibles Mejoras en el Modelo
+
+### Transformación Logarítmica de la Variable Objetivo
+
+Dado que las ventas tienen una distribución altamente sesgada con una larga cola a la derecha, aplicar `log(Weekly_Sales + 1)` podría hacer que los valores sean más manejables y mejorar la capacidad del modelo para predecir rangos más altos de ventas con precisión.
+
+### Manejo de Outliers
+
+- **Filtrar o atenuar outliers extremos:** Usar el método IQR o Winsorization.
+- **Sustituir valores extremos:** Reemplazar por el percentil 99 en cada tienda o departamento.
+- **Tratar los outliers por separado:** Analizar si representan eventos recurrentes o promociones específicas.
+
+
+
+

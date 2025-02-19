@@ -145,11 +145,10 @@ val_preds = model.predict(X_val)
 
 # Evaluación del modelo en validación
 mae = mean_absolute_error(y_val, val_preds)
-rmse = math.sqrt(mean_squared_error(y_val, val_preds))
 
 print("\nResultados en el conjunto de validación:")
 print("MAE:", mae)
-print("RMSE:", rmse)
+
 #%%
 # ============================================================================
 # 9. Predicción en el Dataset Final de Test
