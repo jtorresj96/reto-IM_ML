@@ -56,19 +56,18 @@ Este proyecto tiene como objetivo predecir las ventas semanales de diferentes ti
 
 ## Resultados
 
-- El código mostrará las métricas de validación (MAE, RMSE, etc.).
-- Generará un archivo de predicciones o una salida en pantalla (dependiendo de cómo esté configurado `main.py`).
+- El código mostrará las métricas de validación (MAE).
 
 ## requirements.txt
 
 A continuación se muestra un ejemplo de las librerías requeridas con versiones aproximadas. Puedes ajustar las versiones según tu entorno o necesidades específicas:
 
 ```ini
-pandas==1.3.5
-numpy==1.21.6
-matplotlib==3.5.2
-seaborn==0.11.2
-scikit-learn==1.0.2
+matplotlib==3.10.0
+numpy==2.2.3
+pandas==2.2.3
+scikit-learn==1.6.1
+seaborn==0.13.2
 ```
 
 Instalación:
