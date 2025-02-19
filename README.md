@@ -135,9 +135,8 @@ Dado que las ventas tienen una distribución altamente sesgada con una larga col
 
 ### Manejo de Outliers
 
-- **Filtrar o atenuar outliers extremos:** Usar el método IQR o Winsorization.
-- **Sustituir valores extremos:** Reemplazar por el percentil 99 en cada tienda o departamento.
-- **Tratar los outliers por separado:** Analizar si representan eventos recurrentes o promociones específicas.
+- **Filtrar o atenuar outliers extremos
+- **Sustituir valores extremos
 
 
 
